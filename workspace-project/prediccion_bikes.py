@@ -130,7 +130,7 @@ def models(train):
     print("R2 para GBM: ", r2_score(y_test, y_pred_gb))
 
     
-#models(train_sin_outliers)
+models(train_sin_outliers)
 
 def prediccion(train, test):
     x = train.drop('count',axis=1)

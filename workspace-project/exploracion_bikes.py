@@ -15,7 +15,7 @@ import seaborn as sns
 from scipy import stats
 
 
-data = pd.read_csv("../data/train.csv")
+data = pd.read_csv("../data/train.csv", parse_dates = ["datetime"])
 
 print('Cantidad de Filas y columnas:',data.shape)
 print('Nombre de las features:\n',data.columns)
